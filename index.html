@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SOS Serrure Bordeaux - Dépannage urgent 24h/24 et 7j/7. Ouverture de porte, changement de serrure, blindage et sécurisation à Bordeaux et sa métropole. Intervention en moins de 30 minutes.">
+  <meta name="keywords" content="serrurier Bordeaux, dépannage serrure Bordeaux, urgence serrurier Bordeaux, ouverture porte Bordeaux, changement serrure Bordeaux, blindage Bordeaux">
+  <meta name="author" content="SOS Serrure Bordeaux">
+  <title>SOS Serrure Bordeaux - Dépannage urgent 24h/24 et 7j/7</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" type="image/png">
+
+  <!-- Tailwind & Animate.css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #e0f2ff, #cce4ff);
+      color: #1e3a8a;
+    }
+
+    h1 span { color: #fbbf24; }
+
+    .call-btn, .whatsapp-btn { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { transform: scale(1);} 50% { transform: scale(1.05);} }
+    .whatsapp-btn { background-color: #10b981; }
+    .whatsapp-btn:hover { background-color: #0f9f6e; }
+
+    /* Hero avec vidéo */
+    .hero-section {
+      position: relative;
+      color: white;
+      padding-top: 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-section video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; z-index: 0;
+    }
+    .hero-section .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: #3b82f6;
+      opacity: 0.5; z-index: 1;
+    }
+    .hero-section .content { position: relative; z-index: 10; }
+
+    /* Texte défilant */
+    .scroll-container {
+      display: flex;
+      width: 200%;
+      animation: scroll-left 10s linear infinite;
+      white-space: nowrap;
+    }
+    .scroll-text {
+      display: inline-block;
+      padding-right: 50px;
+      font-weight: bold;
+      color: white;
+      font-size: 1.25rem;
+      white-space: nowrap;
+    }
+    @keyframes scroll-left { 0% {transform: translateX(0);} 100% {transform: translateX(-50%);} }
+    @media (max-width: 768px) { .scroll-text { font-size: 1rem; } }
+  </style>
+</head>
+<body class="font-sans text-gray-900">
+
+  <!-- Texte Défilant -->
+  <section class="bg-yellow-500 py-3 overflow-hidden relative">
+    <div class="scroll-container">
+      <span class="scroll-text">Intervention en moins de 30 minutes </span>
+      <span class="scroll-text">Disponible 24h/24 et 7j/7 dans Bordeaux Métropole </span>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero-section animate__animated animate__fadeIn">
+    <video autoplay muted loop playsinline>
+      <source src="18277653-uhd_3840_2160_24fps.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="text-5xl font-extrabold mb-6 leading-snug"><span>SOS Serrure</span> Bordeaux</h1>
+      <p class="text-lg mb-8">Dépannage urgent, ouverture de porte, changement de serrure.<br>
+        Disponible <strong>24h/24 et 7j/7</strong> à Bordeaux et alentours.</p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="tel:+33756958841" id="callNow" class="call-btn bg-yellow-500 text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:bg-yellow-600 transition">📞 Appeler maintenant</a>
+        <a href="https://wa.me/33756958841" target="_blank" class="whatsapp-btn text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg transition">💬 WhatsApp</a>
+      </div>
+      <p class="mt-6 text-white text-sm">Intervention rapide en moins de 30 minutes dans Bordeaux Métropole.</p>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="py-16 container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Qui sommes-nous ?</h2>
+    <p class="max-w-3xl mx-auto">Chez <strong>SOS Serrure Bordeaux</strong>, nous intervenons depuis plusieurs années pour vos urgences en serrurerie. Notre équipe est disponible <strong>24h/24 et 7j/7</strong> pour ouvrir une porte, changer une serrure, installer un blindage ou sécuriser vos accès après une effraction. Basés à Bordeaux, nous intervenons également à Talence, Mérignac, Pessac, Bègles, Lormont et dans toute la métropole Bordelaise.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Nos services de serrurerie</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-md text-center animate-on-scroll">
+        <img src="https://res.cloudinary.com/liaison-inc/image/upload/c_fill,f_auto,q_auto,w_1200/services/homeguide/backgrounds/locksmiths.jpg" alt="Ouverture de porte" class="h-40 w-full object-cover mb-4 rounded-md">
+        <h3 class="text-xl font-semibold mb-2">Ouverture de porte</h3>
+        <p>Porte claquée, clé oubliée, serrure bloquée : nous intervenons rapidement sans dégâts inutiles.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-center animate-on-scroll">
+        <img src="https://www.atelier-decocreation.fr/upload/changement-serrure.webp" alt="Changement de serrure" class="h-40 w-full object-cover mb-4 rounded-md">
+        <h3 class="text-xl font-semibold mb-2">Changement de serrure</h3>
+        <p>Installation et remplacement de serrures toutes marques, cylindre simple ou multipoints, pour plus de sécurité.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-center animate-on-scroll">
+        <img src="https://www.metal2000.fr/webp/2022/07/62d0124d0bdc6.webp" alt="Installation blindage porte" class="h-40 w-full object-cover mb-4 rounded-md">
+        <h3 class="text-xl font-semibold mb-2">Installation blindage</h3>
+        <p>Pose de portes blindées et solutions de sécurisation renforcées pour protéger efficacement votre logement.</p>
+      </div>
+    </div>
+    <div class="mt-10 text-center max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Nos prestations</h3>
+      <ul class="list-disc list-inside text-left mx-auto max-w-md">
+        <li>Dépannage urgence (porte claquée, serrure bloquée)</li>
+        <li>Changement de cylindre & serrure multipoints</li>
+        <li>Installation de portes blindées et renforts</li>
+        <li>Mise en sécurité après effraction</li>
+        <li>Conseils sécurité & devis gratuit</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Zones d'intervention -->
+  <section class="py-16 bg-blue-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Zones d’intervention</h2>
+      <p class="max-w-3xl mx-auto">Nous intervenons dans toute la métropole Bordelaise : Bordeaux centre, Talence, Mérignac, Pessac, Bègles, Lormont, Cenon, Floirac et communes voisines. En cas d’urgence, un serrurier peut être chez vous en moins de 30 minutes.</p>
+    </div>
+  </section>
+
+  <!-- Avis -->
+  <section id="reviews" class="py-16 container mx-auto px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Avis de nos clients</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-100 p-6 rounded-xl shadow-md animate-on-scroll">
+        <p class="mb-2">⭐⭐⭐⭐⭐</p>
+        <p class="mb-2">"Intervention ultra rapide pour une porte claquée. Le serrurier était très professionnel et a résolu le problème sans rien abîmer. Je recommande vivement !"</p>
+        <p class="font-semibold">- Sophie D.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-md animate-on-scroll">
+        <p class="mb-2">⭐⭐⭐⭐⭐</p>
+        <p class="mb-2">"Changement de serrure effectué rapidement et proprement. Très satisfait du service et de la ponctualité."</p>
+        <p class="font-semibold">- Marc L.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-md animate-on-scroll">
+        <p class="mb-2">⭐⭐⭐⭐⭐</p>
+        <p class="mb-2">"Serrurier très réactif, professionnel et sympathique. Je n’hésiterai pas à les rappeler en cas d’urgence."</p>
+        <p class="font-semibold">- Claire T.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Besoin d’un serrurier en urgence ?</h2>
+    <p class="mb-6">Appelez-nous ou écrivez-nous sur WhatsApp pour une intervention rapide et efficace.</p>
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="tel:+33756958841" class="call-btn bg-yellow-500 text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:bg-yellow-600 transition">📞 07 56 95 88 41</a>
+      <a href="https://wa.me/33756958841" target="_blank" class="whatsapp-btn text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg transition">💬 WhatsApp</a>
+    </div>
+    <div class="mt-10 flex justify-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.1234567890123!2d-0.57918!3d44.83779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55265000000001%3A0x123456789abcdef!2s123+Rue+de+Bordeaux%2C+33000+Bordeaux!5e0!3m2!1sfr!2sfr!4v1694890000000!5m2!1sfr!2sfr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center p-6 mt-12">
+    <p>&copy; 2025 SOS Serrure Bordeaux – Dépannage 24h/24 et 7j/7 – Tous droits réservés</p>
+  </footer>
+
+  <script>
+    document.getElementById('callNow').addEventListener('click', function(){
+      console.log("Appel lancé vers SOS Serrure Bordeaux");
+    });
+
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.bottom >= 0;
+    }
+    function animateOnScroll() {
+      const animElements = document.querySelectorAll('.animate-on-scroll');
+      animElements.forEach(el => {
+        if (isInViewport(el) && !el.classList.contains('animate__fadeInUp')) {
+          el.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+      });
+    }
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
+</body>
+</html>
